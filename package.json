@@ -9,6 +9,7 @@
     "dist/",
     "README.md"
   ],
+  "repository": "yuantau/remove-black",
   "author": "YT",
   "license": "MIT",
   "devDependencies": {

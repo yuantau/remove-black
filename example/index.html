@@ -9,8 +9,8 @@
     const ctx = canvas.getContext("2d");
     ctx.drawImage(img, 0, 0);
     const imgData = ctx.getImageData(0, 0, img.width, img.height);
-    const data = removeBlack(imgData.data, img.width, img.height);
-    ctx.putImageData(new ImageData(data, img.width, img.height), 0, 0);
+    removeBlack(imgData.data, img.width, img.height);
+    ctx.putImageData(imgData, 0, 0);
   });
 </script>
 <body>
